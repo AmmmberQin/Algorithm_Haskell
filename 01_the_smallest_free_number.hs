@@ -8,4 +8,4 @@ minfree xs = if null ([0..b-1] \\ us)
              then head ([b..] \\ vs)
              else head ([0..b-1] \\ us)
              where (us, vs) = (partition (<b) xs)
-                          b = div (length xs) 2 
+                   b        = div (length xs) 2 
